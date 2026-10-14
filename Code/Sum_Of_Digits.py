@@ -1,0 +1,22 @@
+
+def sum_of_digits(num):
+    num = abs(num)
+    total = 0
+
+    while num > 0:
+        digit = num % 10
+        total += digit
+        num = num // 10
+
+    return total
+
+
+def main():
+    num = int(input("Enter a number: "))
+    result = sum_of_digits(num)
+    print("Sum of digits:", result)
+
+
+if __name__ == "__main__":
+    main()
+
